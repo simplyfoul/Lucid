@@ -27,7 +27,7 @@
 - [Spotify](https://spotify.com)
 - [Discord](https://discord.com)
 - [Reddit](https://reddit.com)
-- [GeoforceNow](https://www.nvidia.com/en-us/geforce-now/)
+- [GeforceNow](https://www.nvidia.com/en-us/geforce-now/)
 - And more!
 
 ## Technologies Used
@@ -66,7 +66,7 @@ $ node .
 - [https://github.com/titaniumnetwork-dev/](https://github.com/titaniumnetwork-dev/Ultraviolet)
 - https://github.com/ZeltuxDev
 - https://github.com/pyroTM
-
+- https://github.com/Arctiz
 
 
 # DMCA
