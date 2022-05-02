@@ -74,6 +74,4 @@ $ node .
 
 Lucid is protected by DMCA
 
-<a href="//www.dmca.com/Protection/Status.aspx?ID=1e09e4da-2c61-4997-bf60-90acf320c23a" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca_protected_sml_120n.png?ID=1e09e4da-2c61-4997-bf60-90acf320c23a"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
-
 
