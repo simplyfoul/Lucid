@@ -6,8 +6,8 @@
 <p align="center">An open-source proxy using the Ultraviolet backend by TN, Lucids purpose is to end internet censorship.<br><br></p>
 
 ## Self Host
-[![Deploy to Heroku](https://raw.githubusercontent.com/BinBashBanana/deploy-buttons/master/buttons/remade/heroku.svg)](https://heroku.com/deploy/?template=https://github.com/pyroTM/LucidProxy)
-[![Run on Replit](https://raw.githubusercontent.com/BinBashBanana/deploy-buttons/master/buttons/remade/replit.svg)](https://replit.com/github/pyroTM/LucidProxy)
+[![Deploy to Heroku](https://raw.githubusercontent.com/BinBashBanana/deploy-buttons/master/buttons/remade/heroku.svg)](https://heroku.com/deploy/?template=https://github.com/AstralService/Lucid)
+[![Run on Replit](https://raw.githubusercontent.com/BinBashBanana/deploy-buttons/master/buttons/remade/replit.svg)](https://replit.com/github/AstralService/Lucid)
 
 ## Features
 - CAPTCHA and hCAPTCHA support
