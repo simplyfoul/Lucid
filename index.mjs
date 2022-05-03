@@ -4,6 +4,7 @@ import nodeStatic from 'node-static';
 import dotenv from 'dotenv';
 dotenv.config();
 const bare = new Server('/bare/', '');
+import fs from 'fs";
 
 const serve = new nodeStatic.Server('static/');
 const fakeServe = new nodeStatic.Server('BlacklistServe/');
