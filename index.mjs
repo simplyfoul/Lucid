@@ -1,27 +1,17 @@
 import Server from 'bare-server-node';
-import https from 'https';
+import http from 'http';
 import nodeStatic from 'node-static';
 import dotenv from 'dotenv';
 dotenv.config();
 const bare = new Server('/bare/', '');
-import * as fs from 'fs';
+
 
 const serve = new nodeStatic.Server('static/');
 const fakeServe = new nodeStatic.Server('BlacklistServe/');
 
-const server = https.createServer();
+const server = http.createServer();
 
-function setup(domains) {
-        for (const domain of domains)
-                server.addContext(domain, {
-                        key: fs.readFileSync(`/etc/letsencrypt/live/${domain}/privkey.pem`, 'utf8'),
-                        cert: fs.readFileSync(`/etc/letsencrypt/live/${domain}/cert.pem`, 'utf8')
-                });
-}
 
-const domains = ['development.lucidofficial.xyz'];
-
-setup(domains);
 
 server.on('request', (request, response) => {
 
