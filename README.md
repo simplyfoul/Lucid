@@ -8,7 +8,7 @@
 ## Self Host
 [![Deploy to Heroku](https://raw.githubusercontent.com/BinBashBanana/deploy-buttons/master/buttons/remade/heroku.svg)](https://heroku.com/deploy/?template=https://github.com/AstralService/Lucid)
 [![Run on Replit](https://raw.githubusercontent.com/BinBashBanana/deploy-buttons/master/buttons/remade/replit.svg)](https://replit.com/github/AstralService/Lucid)
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fnext.js%2Ftree%2Fcanary%2Fexamples%2Fhello-world)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/AstralService/Lucid)
 
 ## Features
 - CAPTCHA and hCAPTCHA support
@@ -68,6 +68,7 @@ $ node .
 - https://github.com/ZeltuxDev
 - https://github.com/pyroTM
 - https://github.com/Arctiz
+- https://github.com/IllusionsTBA
 
 
 # DMCA
