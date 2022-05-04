@@ -28,7 +28,7 @@
 - [Spotify](https://spotify.com)
 - [Discord](https://discord.com)
 - [Reddit](https://reddit.com)
-- [GeforceNow](https://www.nvidia.com/en-us/geforce-now/)
+- [GforceNow](https://www.nvidia.com/en-us/geforce-now/)
 - And more!
 
 ## Technologies Used
