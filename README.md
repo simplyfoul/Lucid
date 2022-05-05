@@ -45,7 +45,7 @@ Installation of Lucid is simple. You can view the BASIC GUIDE below!
 ## Basic Guide (Replit, Heroku, Glitch etc.)
 
 ```sh
-$ git clone https://github.com/pyroTM/LucidProxy
+$ git clone https://github.com/AstralService/Lucid.git
 $ npm install
 $ node .
 ```
