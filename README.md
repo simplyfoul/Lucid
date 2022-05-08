@@ -69,6 +69,6 @@ $ node .
 - https://github.com/ZeltuxDev
 - https://github.com/pyroTM
 - https://github.com/Arctiz
-- https://github.com/IllusionsTBA
+- https://github.com/IllusionTBA
 
 
