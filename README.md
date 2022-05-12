@@ -60,7 +60,6 @@ $ node .
 - Pyro (Owner/Founder of Astral Network)
 - Zeltux (Developer for Astral Network)
 - Illusions (Developer for Astral Network)
-- ionetty (Developer for Astral Network)
 - Arctiz (Community Manager for Astral Network)
 - Caracal.js (Creator of Ultraviolet)
 
