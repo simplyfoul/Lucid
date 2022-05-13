@@ -52,7 +52,8 @@ $ node .
 
 | Configuration | Options and Explanation |
 | ------------- | ----------------------- |
-| Prefix | The prefix is the prefix that you want users to see. Ex: `https://lucidofficial.xyz/service` The default prefix is `service`. |
+| Prefix (Ultraviolet) | The prefix is the prefix that you want users to see. Ex: `https://lucidofficial.xyz/service`. The default prefix for Ultraviolet is `service`. |
+| Prefix (Rhodium ) | The prefix is the prefix that you want users to see. Ex: `https://lucidofficial.xyz/rhodium`. The default prefix for Rhodium is `rhodium`. |
 | Bare   | The bare server is the bare server that you want UV to use. Ex: `https://incog.dev/bare` The default bare is `/bare/`. |
 
 # Authors & Contributors
