@@ -3,7 +3,7 @@
 
 <h1 align="center">Lucid Proxy</h1>
 
-<p align="center">An open-source proxy using the Ultraviolet backend by TN, Lucids purpose is to end internet censorship.<br><br></p>
+<p align="center">An open-source proxy using the Ultraviolet backend by TN, Lucid's purpose is to end internet censorship.<br><br></p>
 
 ## Self Host
 [![Deploy to Heroku](https://raw.githubusercontent.com/BinBashBanana/deploy-buttons/master/buttons/remade/heroku.svg)](https://heroku.com/deploy/?template=https://github.com/AstralService/Lucid)
@@ -56,19 +56,12 @@ $ node .
 | Prefix (Rhodium) | The prefix is the prefix that you want users to see. Ex: `https://lucidofficial.xyz/rhodium`. The default prefix for Rhodium is `rhodium`. |
 | Bare   | The bare server is the bare server that you want UV to use. Ex: `https://incog.dev/bare` The default bare is `/bare/`. |
 
-# Authors & Contributors
+# Authors & Contributers
 
-- Pyro (Owner/Founder of Astral Network)
-- Zeltux (Developer for Astral Network)
-- Illusions (Developer for Astral Network)
-- Arctiz (Community Manager for Astral Network)
-- Caracal.js (Creator of Ultraviolet)
-
-# Credits
-- [https://github.com/titaniumnetwork-dev/](https://github.com/titaniumnetwork-dev/Ultraviolet)
-- https://github.com/ZeltuxDev
-- https://github.com/pyroTM
-- https://github.com/Arctiz
-- https://github.com/IllusionTBA
-
-
+- [TitaniumNetwork (Creator of Ultraviolet)](https://github.com/titaniumnetwork-dev/Ultraviolet-Node)
+- [LudicrousDevelopment (Creator of Rhodium)](https://github.com/LudicrousDevelopment/Rhodium)
+- [Pyro (Owner/Founder of Astral Network)](https://github.com/pyroTM)
+- [Zeltux (Developer for Astral Network)](https://github.com/ZeltuxDev)
+- [Illusions (Developer for Astral Network)](https://github.com/illusionTBA)
+- [ssd (Developer for Astral Network)](https://github.com/Avad3)
+- [Arctiz (Community Manager for Astral Network)](https://github.com/Arctiz)
