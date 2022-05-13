@@ -1,17 +1,26 @@
 import Server from 'bare-server-node';
+import Proxy from './lib/main/bundle.js';
 import http from 'http';
 import nodeStatic from 'node-static';
 import dotenv from 'dotenv';
 dotenv.config();
 const bare = new Server('/bare/', '');
 
-
 const serve = new nodeStatic.Server('static/');
 const fakeServe = new nodeStatic.Server('BlacklistServe/');
 
 const server = http.createServer();
-
-
+const proxy = new Proxy({
+    prefix: '/rhodium/',
+    encode: 'xor',
+    title: "Rhodium",
+    server: server,
+    wss: true,
+    corrosion: [
+        false, {}
+    ]
+});
+proxy.init();
 
 server.on('request', (request, response) => {
 
@@ -36,10 +45,12 @@ server.on('request', (request, response) => {
         fakeServe.serve(request, response);
     }
     else {
-        if (bare.route_request(request, response))
-            return true;
-
-        serve.serve(request, response);
+        if (request.url.startsWith(proxy.prefix)) {
+            proxy.request(request, response)
+        } else {
+            if (bare.route_request(request, response)) return true;
+            serve.serve(request, response);
+        }
     }
 });
 
@@ -48,6 +59,5 @@ server.on('upgrade', (req, socket, head) => {
         return;
     socket.end();
 });
-
 
 server.listen(process.env.PORT || 8080);
