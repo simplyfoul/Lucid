@@ -1,4 +1,4 @@
-document.getElementById("mcLaunch").addEventListener("click", function() {
+document.getElementById("mcLaunch ").addEventListener("click", function() {
 
     urle = "https://" + document.domain + "\\static\\games\\minecraft.html";
     win = window.open();
@@ -15,7 +15,7 @@ document.getElementById("mcLaunch").addEventListener("click", function() {
 
 })
 
-document.getElementById("retroLaunch").addEventListener("click", function() {
+document.getElementById("retroLaunch ").addEventListener("click", function() {
 
     urle = "https://" + document.domain + "\\static\\games\\Retrobowl\\production.html";
     win = window.open();
