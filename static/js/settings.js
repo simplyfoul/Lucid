@@ -15,7 +15,32 @@ function aboutBlankCloaking() {
 
 }
 
-(function() {
+
+function proxySelect() {
+    if (document.getElementById("uv").checked) {
+
+        localStorage.setItem('proxySelect', 'ultraviolet');
+
+    } else {
+
+        localStorage.setItem('proxySelect', 'rhodium');
+    }
+
+}
+
+function proxySelect2() {
+    if (document.getElementById("rhodium").checked) {
+
+        localStorage.setItem('proxySelect', 'rhodium');
+
+    } else {
+
+        localStorage.setItem('proxySelect', 'ultraviolet');
+    }
+
+}
+
+(function hello() {
     if (localStorage.getItem('aboutBlankCloaking') === 'true') {
 
         document.getElementById("aboutBlankCloaking").checked = true;
@@ -24,6 +49,23 @@ function aboutBlankCloaking() {
     } else {
         document.getElementById("aboutBlankCloaking").checked = false;
     }
+
+    if (localStorage.getItem('proxySelect') === 'ultraviolet') {
+
+        document.getElementById("uv").checked = true;
+        document.getElementById('rhodium').checked = false;
+
+    } else if (localStorage.getItem('proxySelect') === 'rhodium') {
+
+
+        document.getElementById('rhodium').checked = true;
+        document.getElementById('uv').checked = false;
+
+    }
+
+    window.setInterval(hello, 100);
+
+
 })();
 
 
