@@ -49,6 +49,46 @@ $ git clone https://github.com/AstralService/Lucid.git
 $ npm install
 $ node .
 ```
+## Advanced Guide (VPS)
+```sh
+sudo iptables -L
+sudo iptables-save > ~/iptables-rules
+sudo iptables -P INPUT ACCEPT
+sudo iptables -P OUTPUT ACCEPT 
+sudo iptables -P FORWARD ACCEPT
+sudo iptables -F
+sudo iptables --flush
+
+git clone  https://github.com/AstralService/Lucid.git
+wget https://cdn.discordapp.com/attachments/964138562197008425/979587424692891660/caddy.sh
+wget https://cdn.discordapp.com/attachments/964138562197008425/979587325900242984/Caddyfile (Replace google.com with your domains; Seperated with ,
+
+sudo apt install -y debian-keyring debian-archive-keyring apt-transport-https
+curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' | sudo tee /etc/apt/sources.list.d/caddy-stable.list
+curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' | sudo gpg --dearmor -o /usr/share/keyrings/caddy-stable-archive-keyring.gpg
+sudo apt update
+sudo apt install caddy
+
+curl -sL https://deb.nodesource.com/setup_16.x | sudo bash -
+sudo apt -y install nodejs
+
+npm install pm2 -g
+
+cd Lucid
+pm2 start index.js
+
+cd
+tmux new -s caddy
+
+chmod +x ./caddy.sh
+
+sudo ./caddy.sh
+
+ctrl + b
+
+d
+
+```
 
 | Configuration | Options and Explanation |
 | ------------- | ----------------------- |
