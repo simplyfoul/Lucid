@@ -40,7 +40,7 @@
 
 # Installation and Setup
 
-Installation of Lucid is simple. You can view the BASIC GUIDE below!
+Installation of Lucid is simple. You can view the BASIC & ADVANCED GUIDES below!
 
 ## Basic Guide (Replit, Heroku, Glitch etc.)
 
