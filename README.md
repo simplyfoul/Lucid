@@ -90,6 +90,7 @@ d
 
 ```
 
+
 | Configuration | Options and Explanation |
 | ------------- | ----------------------- |
 | Prefix (Ultraviolet) | The prefix is the prefix that you want users to see. Ex: `https://lucidofficial.xyz/service`. The default prefix for Ultraviolet is `service`. |
