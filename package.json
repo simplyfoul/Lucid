@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "bare-server-node": "github:tomphttp/bare-server-node",
+    "@tomphttp/bare-server-node": "^1.0.3-log1",
     "css": "^3.0.0",
     "css-tree": "^2.1.0",
     "daisyui": "^2.14.3",
