@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<html data-theme="luxury"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Lucid</title>
+</head>
+  <body>
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost btn-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+          </label>
+          <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a href="../">Home</a></li>
+            <li><a href="">Arcade</a></li>
+            <li><a href="../s">Settings</a></li>
+            <li><a href="../c">Credits</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="navbar-center">
+        <a href="index.html" btn btn-ghost normal-case text-xl">Lucid</a>
+      </div>
+      <div class="navbar-end">
+        <label class="swap swap-rotate">
+          <input type="checkbox" onclick="toggleTheme();"/>
+          
+          <svg class="swap-on fill-current w-7 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"/></svg>
+
+          <svg class="swap-off fill-current w-7 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"/></svg>
+          
+        </label>
+      </div>
+    </div> 
+    
+    <div class="hero min-h-screen bg-base-200">
+        <div class="hero-content text-center">
+            <div class="max-w-md">
+                <h1 class="text-5xl font-bold  hover__btn nodeHover">Lucid Arcade</h1>
+                <div class="container">
+                <div class="box">
+                <div id="glist">
+                  <div class="divider"><p>HTML5</p></div>
+                  <a class="underline" href="2048">2048</a><br>
+                  <a class="underline" href="chess">Chess</a><br>
+                  <a class="underline" href="chromedino">Chrome Dino</a><br>
+                  <a class="underline" href="slope">Cookie Clicker</a><br>
+                  <a class="underline" href="eagler">Eaglercraft</a><br>
+                  <a class="underline" href="fnaw">Five Night's at Winston's</a><br>
+                  <a class="underline" href="fnf">Friday Night Funkin'</a><br>
+                  <a class="underline" href="osu">Osu!</a><br>
+                  <a class="underline" href="slope">Slope</a><br>
+                  <a class="underline" href="tetris">Tetris</a><br>
+                  <a class="underline" href="tunnelrush">Tunnel Rush</a><br>
+                  <a class="underline" href="wbwwb">We Become What We Behold</a><br>
+                  <div class="divider"><p>Multiplayer</p></div>
+                  <a class="underline" href="1v1">1v1.lol</a><br>
+                  <a class="underline" href="agar">Agar.io</a><br>
+                  <a class="underline" href="justfall">JustFall.lol</a><br>
+                  <a class="underline" href="krunker">Krunker.io</a><br>
+                  <a class="underline" href="paper">Paper.io</a><br>
+                  <a class="underline" href="skribbl">Skribbl.io</a><br>
+                  <a class="underline" href="slither">Slither.io</a><br>
+                  <a class="underline" href="snowball">Snowball.io</a><br>
+                  <a class="underline" href="tetr">Tetr.io</a><br>
+                  <div class="divider"><p>Mobile</p></div>
+                  <a class="underline" href="Amogus">Among Us ඞ</a><br>
+                  <a class="underline" href="bowmasters">Bowmasters</a><br>
+                  <a class="underline" href="crk">Cookie Run: Kingdom</a><br>
+                  <a class="underline" href="flappybird">Flappy Bird</a><br>
+                  <a class="underline" href="geometrydash">Geometry Dash</a><br>
+                  <a class="underline" href="retrobowl">Retrobowl</a><br>
+                  <a class="underline" href="subway">Subway Surfers</a><br>
+                  <div class="divider"><p>Emulators</p></div>
+                  <a class="underline" href="rarch/?core=mgba">Upload GBA ROM...</a><br>
+                  <a class="underline" href="rarch/?core=genesis_plus_gx">Upload Genesis/Master System ROM...</a><br>
+                  <a class="underline" href="rarch/?core=mupen64plus_next">Upload N64 ROM...</a><br>
+                  <a class="underline" href="rarch/?core=nestopia">Upload NES ROM...</a><br>
+                  <a class="underline" href="rarch/?core=snes9x">Upload SNES ROM...</a><br>
+                  <div class="divider"><p>Flash</p></div>
+                  <a class="underline" href="flash">Upload SWF File...</a><br>
+<a class="underline" href="flash/?swf=1on1soccer.swf">1on1soccer</a><br>
+<a class="underline" href="flash/?swf=3dtanks.swf">3dtanks</a><br>
+<a class="underline" href="flash/?swf=abobosbigadventure.swf">Abobosbigadventure</a><br>
+<a class="underline" href="flash/?swf=achievementunlocked.swf">Achievementunlocked</a><br>
+<a class="underline" href="flash/?swf=achievementunlocked2.swf">Achievementunlocked2</a><br>
+<a class="underline" href="flash/?swf=achievementunlocked3.swf">Achievementunlocked3</a><br>
+<a class="underline" href="flash/?swf=actionturnip.swf">Actionturnip</a><br>
+<a class="underline" href="flash/?swf=adaran.swf">Adaran</a><br>
+<a class="underline" href="flash/?swf=adrenaline.swf">Adrenaline</a><br>
+<a class="underline" href="flash/?swf=americanracing1.swf">Americanracing1</a><br>
+<a class="underline" href="flash/?swf=americanracing2.swf">Americanracing2</a><br>
+<a class="underline" href="flash/?swf=arkandianrevenant.swf">Arkandianrevenant</a><br>
+<a class="underline" href="flash/?swf=armyofages.swf">Armyofages</a><br>
+<a class="underline" href="flash/?swf=awesomecars.swf">Awesomecars</a><br>
+<a class="underline" href="flash/?swf=awesomeplanes.swf">Awesomeplanes</a><br>
+<a class="underline" href="flash/?swf=battlepanic.swf">Battlepanic</a><br>
+<a class="underline" href="flash/?swf=bloonsplayerpack2.swf">Bloonsplayerpack2</a><br>
+<a class="underline" href="flash/?swf=bloonsplayerpack3.swf">Bloonsplayerpack3</a><br>
+<a class="underline" href="flash/?swf=bloonsplayerpack4.swf">Bloonsplayerpack4</a><br>
+<a class="underline" href="flash/?swf=bloonsplayerpack5.swf">Bloonsplayerpack5</a><br>
+<a class="underline" href="flash/?swf=bloonstd1.swf">Bloonstd1</a><br>
+<a class="underline" href="flash/?swf=bloonstd3.swf">Bloonstd3</a><br>
+<a class="underline" href="flash/?swf=bloonstd4.swf">Bloonstd4</a><br>
+<a class="underline" href="flash/?swf=bloonstd5.swf">Bloonstd5</a><br>
+<a class="underline" href="flash/?swf=bobtherobber.swf">Bobtherobber</a><br>
+<a class="underline" href="flash/?swf=boombot2.swf">Boombot2</a><br>
+<a class="underline" href="flash/?swf=boxhead2play.swf">Boxhead2play</a><br>
+<a class="underline" href="flash/?swf=bubbletanks2.swf">Bubbletanks2</a><br>
+<a class="underline" href="flash/?swf=bulletbill.swf">Bulletbill</a><br>
+<a class="underline" href="flash/?swf=bullettimefighting.swf">Bullettimefighting</a><br>
+<a class="underline" href="flash/?swf=burritobison.swf">Burritobison</a><br>
+<a class="underline" href="flash/?swf=burritobisonrevenge.swf">Burritobisonrevenge</a><br>
+<a class="underline" href="flash/?swf=cactusmccoy.swf">Cactusmccoy</a><br>
+<a class="underline" href="flash/?swf=cactusmccoy2.swf">Cactusmccoy2</a><br>
+<a class="underline" href="flash/?swf=cannonbasketball2.swf">Cannonbasketball2</a><br>
+<a class="underline" href="flash/?swf=cargobridge.swf">Cargobridge</a><br>
+<a class="underline" href="flash/?swf=causality.swf">Causality</a><br>
+<a class="underline" href="flash/?swf=chibiknight.swf">Chibiknight</a><br>
+<a class="underline" href="flash/?swf=clickerheroes.swf">Clickerheroes</a><br>
+<a class="underline" href="flash/?swf=computerbashing.swf">Computerbashing</a><br>
+<a class="underline" href="flash/?swf=crushthecastle.swf">Crushthecastle</a><br>
+<a class="underline" href="flash/?swf=crushthecastle2.swf">Crushthecastle2</a><br>
+<a class="underline" href="flash/?swf=cubefield.swf">Cubefield</a><br>
+<a class="underline" href="flash/?swf=cyclomaniacs2.swf">Cyclomaniacs2</a><br>
+<a class="underline" href="flash/?swf=diggy.swf">Diggy</a><br>
+<a class="underline" href="flash/?swf=donkeykong.swf">Donkeykong</a><br>
+<a class="underline" href="flash/?swf=dontshootthepuppy.swf">Dontshootthepuppy</a><br>
+<a class="underline" href="flash/?swf=doodledefender.swf">Doodledefender</a><br>
+<a class="underline" href="flash/?swf=doom.swf">Doom</a><br>
+<a class="underline" href="flash/?swf=dragracing.swf">Dragracing</a><br>
+<a class="underline" href="flash/?swf=ducklife.swf">Ducklife</a><br>
+<a class="underline" href="flash/?swf=ducklife2.swf">Ducklife2</a><br>
+<a class="underline" href="flash/?swf=ducklife3.swf">Ducklife3</a><br>
+<a class="underline" href="flash/?swf=ducklife4.swf">Ducklife4</a><br>
+<a class="underline" href="flash/?swf=earntodie.swf">Earntodie</a><br>
+<a class="underline" href="flash/?swf=earntodie2.swf">Earntodie2</a><br>
+<a class="underline" href="flash/?swf=earntodiesuperwheel.swf">Earntodiesuperwheel</a><br>
+<a class="underline" href="flash/?swf=electricman2.swf">Electricman2</a><br>
+<a class="underline" href="flash/?swf=elephantquest.swf">Elephantquest</a><br>
+<a class="underline" href="flash/?swf=epicbattlefantasy3.swf">Epicbattlefantasy3</a><br>
+<a class="underline" href="flash/?swf=epiccomboredux.swf">Epiccomboredux</a><br>
+<a class="underline" href="flash/?swf=exitpath.swf">Exitpath</a><br>
+<a class="underline" href="flash/?swf=factoryballs.swf">Factoryballs</a><br>
+<a class="underline" href="flash/?swf=factoryballs2.swf">Factoryballs2</a><br>
+<a class="underline" href="flash/?swf=factoryballs3.swf">Factoryballs3</a><br>
+<a class="underline" href="flash/?swf=factoryballs4.swf">Factoryballs4</a><br>
+<a class="underline" href="flash/?swf=fancypantsadventure.swf">Fancypantsadventure</a><br>
+<a class="underline" href="flash/?swf=fancypantsadventure2.swf">Fancypantsadventure2</a><br>
+<a class="underline" href="flash/?swf=fancypantsadventure3.swf">Fancypantsadventure3</a><br>
+<a class="underline" href="flash/?swf=flashflightsimulator.swf">Flashflightsimulator</a><br>
+<a class="underline" href="flash/?swf=flight.swf">Flight</a><br>
+<a class="underline" href="flash/?swf=fracuum.swf">Fracuum</a><br>
+<a class="underline" href="flash/?swf=freerider2.swf">Freerider2</a><br>
+<a class="underline" href="flash/?swf=getontop.swf">Getontop</a><br>
+<a class="underline" href="flash/?swf=giveuprobot.swf">Giveuprobot</a><br>
+<a class="underline" href="flash/?swf=giveuprobot2.swf">Giveuprobot2</a><br>
+<a class="underline" href="flash/?swf=hanger.swf">Hanger</a><br>
+<a class="underline" href="flash/?swf=hanger2.swf">Hanger2</a><br>
+<a class="underline" href="flash/?swf=happywheels.swf">Happywheels</a><br>
+<a class="underline" href="flash/?swf=hobo.swf">Hobo</a><br>
+<a class="underline" href="flash/?swf=hobo2.swf">Hobo2</a><br>
+<a class="underline" href="flash/?swf=hobo3.swf">Hobo3</a><br>
+<a class="underline" href="flash/?swf=hobo4.swf">Hobo4</a><br>
+<a class="underline" href="flash/?swf=hobo5.swf">Hobo5</a><br>
+<a class="underline" href="flash/?swf=hobo6.swf">Hobo6</a><br>
+<a class="underline" href="flash/?swf=hobo7.swf">Hobo7</a><br>
+<a class="underline" href="flash/?swf=houseofwolves.swf">Houseofwolves</a><br>
+<a class="underline" href="flash/?swf=interactivebuddy.swf">Interactivebuddy</a><br>
+<a class="underline" href="flash/?swf=jacksmith.swf">Jacksmith</a><br>
+<a class="underline" href="flash/?swf=jellytruck.swf">Jellytruck</a><br>
+<a class="underline" href="flash/?swf=johnnyupgrade.swf">Johnnyupgrade</a><br>
+<a class="underline" href="flash/?swf=jumpix2.swf">Jumpix2</a><br>
+<a class="underline" href="flash/?swf=knightmaretower.swf">Knightmaretower</a><br>
+<a class="underline" href="flash/?swf=learn2fly.swf">Learn2fly</a><br>
+<a class="underline" href="flash/?swf=learn2fly2.swf">Learn2fly2</a><br>
+<a class="underline" href="flash/?swf=learn2fly3.swf">Learn2fly3</a><br>
+<a class="underline" href="flash/?swf=magnetface.swf">Magnetface</a><br>
+<a class="underline" href="flash/?swf=mariocombat.swf">Mariocombat</a><br>
+<a class="underline" href="flash/?swf=marioracingtournament.swf">Marioracingtournament</a><br>
+<a class="underline" href="flash/?swf=meatboy.swf">Meatboy</a><br>
+<a class="underline" href="flash/?swf=megamanprojectx.swf">Megamanprojectx</a><br>
+<a class="underline" href="flash/?swf=metroidelements.swf">Metroidelements</a><br>
+<a class="underline" href="flash/?swf=mineblocks.swf">Mineblocks</a><br>
+<a class="underline" href="flash/?swf=minesweeper.swf">Minesweeper</a><br>
+<a class="underline" href="flash/?swf=mirrorsedge.swf">Mirrorsedge</a><br>
+<a class="underline" href="flash/?swf=moneymovers.swf">Moneymovers</a><br>
+<a class="underline" href="flash/?swf=moneymovers3.swf">Moneymovers3</a><br>
+<a class="underline" href="flash/?swf=motherload.swf">Motherload</a><br>
+<a class="underline" href="flash/?swf=motox3m.swf">Motox3m</a><br>
+<a class="underline" href="flash/?swf=multitask.swf">Multitask</a><br>
+<a class="underline" href="flash/?swf=mutilateadoll2.swf">Mutilateadoll2</a><br>
+<a class="underline" href="flash/?swf=myangel.swf">Myangel</a><br>
+<a class="underline" href="flash/?swf=nanotube.swf">Nanotube</a><br>
+<a class="underline" href="flash/?swf=newgroundsrumble.swf">Newgroundsrumble</a><br>
+<a class="underline" href="flash/?swf=ngame.swf">Ngame</a><br>
+<a class="underline" href="flash/?swf=nitromemustdie.swf">Nitromemustdie</a><br>
+<a class="underline" href="flash/?swf=nucleus.swf">Nucleus</a><br>
+<a class="underline" href="flash/?swf=nv2.swf">Nv2</a><br>
+<a class="underline" href="flash/?swf=nyancatlostinspace.swf">Nyancatlostinspace</a><br>
+<a class="underline" href="flash/?swf=offroaders.swf">Offroaders</a><br>
+<a class="underline" href="flash/?swf=onemanarmy2.swf">Onemanarmy2</a><br>
+<a class="underline" href="flash/?swf=outofthisworld.swf">Outofthisworld</a><br>
+<a class="underline" href="flash/?swf=pacman.swf">Pacman</a><br>
+<a class="underline" href="flash/?swf=pandemic.swf">Pandemic</a><br>
+<a class="underline" href="flash/?swf=pandemic2.swf">Pandemic2</a><br>
+<a class="underline" href="flash/?swf=papalouie.swf">Papalouie</a><br>
+<a class="underline" href="flash/?swf=papalouie2.swf">Papalouie2</a><br>
+<a class="underline" href="flash/?swf=papalouie3.swf">Papalouie3</a><br>
+<a class="underline" href="flash/?swf=picosschool.swf">Picosschool</a><br>
+<a class="underline" href="flash/?swf=picosschool2.swf">Picosschool2</a><br>
+<a class="underline" href="flash/?swf=pirates.swf">Pirates</a><br>
+<a class="underline" href="flash/?swf=polarjump.swf">Polarjump</a><br>
+<a class="underline" href="flash/?swf=portal.swf">Portal</a><br>
+<a class="underline" href="flash/?swf=portal2d.swf">Portal2d</a><br>
+<a class="underline" href="flash/?swf=quadrobarreldefence.swf">Quadrobarreldefence</a><br>
+<a class="underline" href="flash/?swf=qubeythecube.swf">Qubeythecube</a><br>
+<a class="underline" href="flash/?swf=qwop.swf">Qwop</a><br>
+<a class="underline" href="flash/?swf=raftwars.swf">Raftwars</a><br>
+<a class="underline" href="flash/?swf=raftwars2.swf">Raftwars2</a><br>
+<a class="underline" href="flash/?swf=raze.swf">Raze</a><br>
+<a class="underline" href="flash/?swf=redball.swf">Redball</a><br>
+<a class="underline" href="flash/?swf=redball2.swf">Redball2</a><br>
+<a class="underline" href="flash/?swf=redball4.swf">Redball4</a><br>
+<a class="underline" href="flash/?swf=redball4v2.swf">Redball4v2</a><br>
+<a class="underline" href="flash/?swf=redball4v3.swf">Redball4v3</a><br>
+<a class="underline" href="flash/?swf=redshift.swf">Redshift</a><br>
+<a class="underline" href="flash/?swf=revenant2.swf">Revenant2</a><br>
+<a class="underline" href="flash/?swf=riddleschool1.swf">Riddleschool1</a><br>
+<a class="underline" href="flash/?swf=riddleschool2.swf">Riddleschool2</a><br>
+<a class="underline" href="flash/?swf=riddleschool3.swf">Riddleschool3</a><br>
+<a class="underline" href="flash/?swf=riddleschool4.swf">Riddleschool4</a><br>
+<a class="underline" href="flash/?swf=riddleschool5.swf">Riddleschool5</a><br>
+<a class="underline" href="flash/?swf=riddletransfer.swf">Riddletransfer</a><br>
+<a class="underline" href="flash/?swf=riddletransfer2.swf">Riddletransfer2</a><br>
+<a class="underline" href="flash/?swf=run2.swf">Run2</a><br>
+<a class="underline" href="flash/?swf=run3.swf">Run3</a><br>
+<a class="underline" href="flash/?swf=saszombieassault3.swf">Saszombieassault3</a><br>
+<a class="underline" href="flash/?swf=sentryknight.swf">Sentryknight</a><br>
+<a class="underline" href="flash/?swf=shoppingcarthero3.swf">Shoppingcarthero3</a><br>
+<a class="underline" href="flash/?swf=siftheads.swf">Siftheads</a><br>
+<a class="underline" href="flash/?swf=siftheads2.swf">Siftheads2</a><br>
+<a class="underline" href="flash/?swf=siftheads3.swf">Siftheads3</a><br>
+<a class="underline" href="flash/?swf=siftheads4.swf">Siftheads4</a><br>
+<a class="underline" href="flash/?swf=siftheads5.swf">Siftheads5</a><br>
+<a class="underline" href="flash/?swf=sniperassassin4.swf">Sniperassassin4</a><br>
+<a class="underline" href="flash/?swf=sportsheadsfootball.swf">Sportsheadsfootball</a><br>
+<a class="underline" href="flash/?swf=sportsheadsracing.swf">Sportsheadsracing</a><br>
+<a class="underline" href="flash/?swf=sportsheadstennis.swf">Sportsheadstennis</a><br>
+<a class="underline" href="flash/?swf=stickrpg.swf">Stickrpg</a><br>
+<a class="underline" href="flash/?swf=stickrun2.swf">Stickrun2</a><br>
+<a class="underline" href="flash/?swf=stickwar.swf">Stickwar</a><br>
+<a class="underline" href="flash/?swf=strikeforceheroes2.swf">Strikeforceheroes2</a><br>
+<a class="underline" href="flash/?swf=strikeforcekittylaststand.swf">Strikeforcekittylaststand</a><br>
+<a class="underline" href="flash/?swf=sugarsugar.swf">Sugarsugar</a><br>
+<a class="underline" href="flash/?swf=sugarsugar2.swf">Sugarsugar2</a><br>
+<a class="underline" href="flash/?swf=sugarsugar3.swf">Sugarsugar3</a><br>
+<a class="underline" href="flash/?swf=superd.swf">Superd</a><br>
+<a class="underline" href="flash/?swf=superfighters.swf">Superfighters</a><br>
+<a class="underline" href="flash/?swf=supermario63.swf">Supermario63</a><br>
+<a class="underline" href="flash/?swf=supermarioflash.swf">Supermarioflash</a><br>
+<a class="underline" href="flash/?swf=supermarioflash2.swf">Supermarioflash2</a><br>
+<a class="underline" href="flash/?swf=supersmashflash.swf">Supersmashflash</a><br>
+<a class="underline" href="flash/?swf=swordsandsandals2.swf">Swordsandsandals2</a><br>
+<a class="underline" href="flash/?swf=tacticalassassin.swf">Tacticalassassin</a><br>
+<a class="underline" href="flash/?swf=tanks.swf">Tanks</a><br>
+<a class="underline" href="flash/?swf=tanktrouble.swf">Tanktrouble</a><br>
+<a class="underline" href="flash/?swf=tetris.swf">Tetris</a><br>
+<a class="underline" href="flash/?swf=thebindingofisaac.swf">Thebindingofisaac</a><br>
+<a class="underline" href="flash/?swf=thegame.swf">Thegame</a><br>
+<a class="underline" href="flash/?swf=theimpossiblequiz.swf">Theimpossiblequiz</a><br>
+<a class="underline" href="flash/?swf=theimpossiblequiz2.swf">Theimpossiblequiz2</a><br>
+<a class="underline" href="flash/?swf=theworldshardestgame2.swf">Theworldshardestgame2</a><br>
+<a class="underline" href="flash/?swf=thingthingarena.swf">Thingthingarena</a><br>
+<a class="underline" href="flash/?swf=thisistheonlylevel.swf">Thisistheonlylevel</a><br>
+<a class="underline" href="flash/?swf=tosstheturtle.swf">Tosstheturtle</a><br>
+<a class="underline" href="flash/?swf=truckloader4.swf">Truckloader4</a><br>
+<a class="underline" href="flash/?swf=ultimateflashsonic.swf">Ultimateflashsonic</a><br>
+<a class="underline" href="flash/?swf=ultimatetactics.swf">Ultimatetactics</a><br>
+<a class="underline" href="flash/?swf=unrealflash.swf">Unrealflash</a><br>
+<a class="underline" href="flash/?swf=vex.swf">Vex</a><br>
+<a class="underline" href="flash/?swf=vex2.swf">Vex2</a><br>
+<a class="underline" href="flash/?swf=vex3.swf">Vex3</a><br>
+<a class="underline" href="flash/?swf=warfare1917.swf">Warfare1917</a><br>
+<a class="underline" href="flash/?swf=warfare1944.swf">Warfare1944</a><br>
+<a class="underline" href="flash/?swf=warp.swf">Warp</a><br>
+<a class="underline" href="flash/?swf=xenos.swf">Xenos</a><br>
+<a class="underline" href="flash/?swf=xtremecliffdiving.swf">Xtremecliffdiving</a><br>
+<a class="underline" href="flash/?swf=yearofthesnake.swf">Yearofthesnake</a><br>
+<a class="underline" href="flash/?swf=yuriusshouseofspooks.swf">Yuriusshouseofspooks</a><br>
+<a class="underline" href="flash/?swf=zombiealienparasites.swf">Zombiealienparasites</a><br>
+              </div>
+              </div>
+              <script> </script>
+
+                
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+<footer class="footer items-center p-4 bg-neutral text-neutral-content ">
+            <div class="items-center grid-flow-col ">
+                <svg width="36 " height="36 " viewBox="0 0 24 24 " xmlns="http://www.w3.org/2000/svg " fill-rule="evenodd " clip-rule="evenodd " class="fill-current "><path d=" "></path></svg>
+                <p>© Astral 2022</p>
+            </div>
+            <div class="grid-flow-col gap-4 md:place-self-center md:justify-self-end ">
+                <a><svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 " viewBox="0 0 24 24 " class="fill-current "><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179
+                        0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678
+                        2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z "></path></svg>
+              </a>
+                <a><svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 " viewBox="0 0 24 24 " class="fill-current "><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245
+                        11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z "></path></svg></a>
+                <a><svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 " viewBox="0 0 24 24 " class="fill-current "><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192
+                        4.615v3.385z "></path></svg></a>
+            </div>
+        </footer>
+
+  <script src="../index.js"></script>
+  <script src="../js/settings.js"></script>
+
+  </body>
+</html>
