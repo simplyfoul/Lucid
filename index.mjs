@@ -10,6 +10,7 @@ const expressServer = express();
 expressServer.use(express.static('public'))
 
 expressServer.get('/', (req, res) => {
+	res.status(404);
 	res.sendFile('index.html');
 });
 
