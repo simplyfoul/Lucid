@@ -1,35 +1,47 @@
-import Server from 'bare-server-node';
+import createBareServer from '@tomphttp/bare-server-node';
 import http from 'http';
-import nodeStatic from 'node-static';
 
+import express from 'express';
 
+const httpServer = http.createServer();
 
-const bare = new Server('/bare/', '');
+const expressServer = express();
 
-const serve = new nodeStatic.Server('static/');
-const fakeServe = new nodeStatic.Server('BlacklistServe/');
+expressServer.use(express.static('public'))
 
-const server = http.createServer();
-
-server.on('request', (request, response) => {
-    const ip = request.headers['x-forwarded-for'] || request.connection.remoteAddress;
-    // Code from NebulaServices
-    var isLS = ip.startsWith('34.216.110') || ip.startsWith('54.244.51') || ip.startsWith('54.172.60') || ip.startsWith('34.203.250') || ip.startsWith('34.203.254');
-
-    if (isLS)
-        fakeServe.serve(request, response);
-    else {
-        if (bare.route_request(request, response))
-            return true;
-
-        serve.serve(request, response);
-    }
+expressServer.get('/', (req, res) => {
+	res.status(404);
+	res.sendFile('index.html');
 });
 
-server.on('upgrade', (req, socket, head) => {
-    if (bare.route_upgrade(req, socket, head))
-        return;
-    socket.end();
+
+const bareServer = createBareServer('/bear/', {
+	maintainer: {
+		email: 'webmaster@goastral.net',
+		website: 'https://github.com/AstralsService/Lucid',
+	},
 });
 
-server.listen(8080);
+httpServer.on('request', (req, res) => {
+	if (bareServer.shouldRoute(req)) {
+		bareServer.routeRequest(req, res);
+	} else {
+		expressServer(req, res);
+	}
+});
+
+httpServer.on('upgrade', (req, socket, head) => {
+	if (bareServer.shouldRoute(req)) {
+		bareServer.routeUpgrade(req, socket, head);
+	} else {
+		socket.end();
+	}
+});
+
+httpServer.on('listening', () => {
+	console.log('HTTP server listening');
+});
+
+httpServer.listen({
+	port: 8080,
+});

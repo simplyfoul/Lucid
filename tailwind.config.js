@@ -1,16 +1,6 @@
-const colors = require('tailwindcss/colors')
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: [],
-    darkMode: 'class',
-    daisyui: {
-        themes: ["light", "dark", "cupcake", "bumblebee", "emerald", "corporate", "synthwave", "retro", "cyberpunk", "valentine", "halloween", "garden", "forest", "aqua", "lofi", "pastel", "fantasy", "wireframe", "black", "luxury", "dracula", "cmyk", "autumn", "business", "acid", "lemonade", "night", "coffee", "winter"],
-    },
-    theme: {
-        colors: {
-            'posh': '#dca54c'
-        },
-        extend: {},
-
-    },
-    plugins: [require("daisyui"), require('flowbite/plugin')]
+  content: ["./public/**/*.{html,js}"],
+  theme: ["luxury"],
+  plugins: [require("daisyui")],
 }
